@@ -1,0 +1,27 @@
+.leftbox {
+    text-align: center;
+    color: white;
+    /* background-color: blue;  */
+    width: 30%
+}
+.rightbox {
+    text-align: center;
+    color: white;
+    /* background-color:green; */
+    width: 30%
+}
+.middlebox {
+    text-align: center;
+    color: white;
+    /* background-color:yellow; */
+    width: 30%
+}
+.mainbox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%
+}
+
+.h1 {
+    font-size: x-large;
+}
