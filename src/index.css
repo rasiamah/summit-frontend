@@ -2,6 +2,7 @@
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:wght@300&display=swap");
 
+
 .cursive {
   font-family: "Truculenta", cursive;
   font-weight: 700;
@@ -15,14 +16,4 @@
 
 .home-name {
   font-size: 100px;
-}
-
-.footer{
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: rgb(235, 195, 64);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }

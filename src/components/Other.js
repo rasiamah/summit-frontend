@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Other() {
-  return <div>Other Pages</div>;
+  return <div style={{  height: "100vh" }}>Other Pages</div>;
 }
