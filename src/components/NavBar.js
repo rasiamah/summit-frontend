@@ -1,12 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom";
-//import { SocialIcon } from "react-social-icons";
-//import LinkedInIcon from '@material-ui/icons/LinkedIn';
-//import GitHubIcon from '@material-ui/icons/GitHub';
-//import {Box, Link, Typography} from '@material-ui/core';
 import SvgIcon from '@material-ui/core/SvgIcon';
-//import AccountTreeIcon from '@material-ui/icons/AccountTree';
-//import ReceiptIcon from '@material-ui/icons/Receipt';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 
 
 function HomeIcon(props) {
@@ -19,24 +14,24 @@ function HomeIcon(props) {
 
 export default function NavBar() {
     return (
-        <header className="bg-gray-900">
-            <div className="container mx-auto flex justify-between">
+        <header className="bg-gray-800">
+            <div className=" container mx-auto flex justify-between">
                 <nav className="flex">
                     <NavLink to="/" exact 
-                     activeClassName="text-white"
-                     className="inline-flex items-center py-6 px-3 mr-5 text-red-800 hover:text-green-800 text-4xl font-bold cursive tracking-widest">
+                     activeClassName=""
+                     className="inline-flex items-center py-6 px-3 mr-5 text-white hover:text-green-800 text-4xl font-bold cursive tracking-widest">
                        <HomeIcon  style={{ fontSize: 50 }}/> THE SUMMIT
                     </NavLink>
                     
                     <NavLink to="/about"
-                    activeClassName="text-green-100 bg-red-900"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800">
-                        About SUMMIT!
+                    activeClassName=""
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-500 hover:text-green-800">
+                        <PermIdentityIcon/>About SUMMIT!
                     </NavLink>
 
                     <NavLink to="/other"
-                    activeClassName="text-green-100 bg-red-900"
-                    className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800">
+                    activeClassName=""
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-500 hover:text-green-800">
                         Other!
                     </NavLink>
 

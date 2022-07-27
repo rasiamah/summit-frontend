@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Typography} from '@material-ui/core';
-import './footerstyles.css';
+import './footerstyles.css'; 
 // import DescriptionIcon   from '@material-ui/icons/Description';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // import GitHubIcon from '@material-ui/icons/GitHub';
@@ -11,23 +11,23 @@ import './footerstyles.css';
 export default function Footer() {
   return (
 
-    <Box class="container bg-gray-900 max-w-full content-start" >
+    <Box class="container bg-gray-900 max-w-full content-start position-fixed buttom-0" >
       <Box className="mainbox bg-gray-900 w-full" p={3} boxShadow={8} >
-        <Box p={3} boxShadow={8} borderRadius={10} text-xs className="leftbox bg-gray-800" >
-        <Typography variant="h5" color="secondary">ROSBY</Typography>
+        <Box p={3} boxShadow={8} borderRadius={10} text-xs className="leftbox rounded bg-gray-800" >
+        <Typography variant="h5" color="">ROSBY</Typography>
           <Typography>
             Front-End developer / UI/UX Designer
           </Typography>
         </Box>
 
-        <Box  p={3} boxShadow={8} borderRadius={10} className="middlebox bg-gray-800">
-        <Typography variant="h5" color="secondary">Kofi</Typography>
+        <Box  p={3} boxShadow={8} borderRadius={10} className="middlebox rounded bg-gray-800">
+        <Typography variant="h5" color="">Kofi</Typography>
           <Typography>
             Application Developer
           </Typography>
         </Box>
-        <Box p={3} boxShadow={8} borderRadius={9} className="rightbox bg-gray-800">
-        <Typography variant="h5" color="secondary">Melvin</Typography>
+        <Box p={3} boxShadow={8} borderRadius={9} className="rightbox rounded bg-gray-800">
+        <Typography variant="h5" color="">Melvin</Typography>
           <Typography>
             Software Engineer
           </Typography>
