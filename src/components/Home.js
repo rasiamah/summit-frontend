@@ -15,14 +15,14 @@ import Box from "@mui/material/Box";
 
 export default function Home() {
   return (
-    <div class="h-screen p-6 bg-gray-300 grid " >
-      {/* <div class=" rounded max-w-full bg-gray-900 text-white shadow-2xl ">
+    <div class=" min-h-screen p-6 bg-gray-300 grid " >
+      <div class=" rounded max-w-full bg-green-900 text-white shadow-2xl ">
         <Box class="p-6">
           <h1>Home Page</h1>
           <p>"I might create the home page ina way where there are more grids.
           So contnt can go in each section of the grid and look neat and present table"</p>
         </Box>
-      </div> */}
+      </div>
       <div class=" grid grid-cols-2 rounded max-w-full bg-gray-200 shadow-2xl ">
         <Box class="p-6">
           <h1>Home Page</h1>
@@ -47,10 +47,11 @@ export default function Home() {
           <p>"I might create the home page ina way where there are more grids.
           So contnt can go in each section of the grid and look neat and present table"</p>
         </Box>
-        
       </div>
+
       
-      
+     
+   
     </div>
   )
 };

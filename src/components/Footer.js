@@ -10,8 +10,7 @@ import './footerstyles.css';
 
 export default function Footer() {
   return (
-
-    <Box class="container bg-gray-900 max-w-full content-start position-fixed buttom-0" >
+    <Box class="wrapper p-2 bg-gray-900 max-w-full content-start buttom-0" >
       <Box className="mainbox bg-gray-900 w-full" p={3} boxShadow={8} >
         <Box p={3} boxShadow={8} borderRadius={10} text-xs className="leftbox rounded bg-gray-800" >
         <Typography variant="h5" color="">ROSBY</Typography>
