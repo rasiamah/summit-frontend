@@ -1,5 +1,7 @@
 
 import * as React from "react";
+import rosby1 from "../images/Rosby1.jpg";
+import engbuilding from "../images/Engbuilding.jpg";
 //import { styled } from "@mui/material/styles";
 //import Grid from "@mui/material/Grid";
 //import Paper from "@mui/material/Paper";
@@ -15,43 +17,35 @@ import Box from "@mui/material/Box";
 
 export default function Home() {
   return (
-    <div class=" min-h-screen p-6 bg-gray-300 grid " >
-      <div class=" rounded max-w-full bg-green-900 text-white shadow-2xl ">
-        <Box class="p-6">
-          <h1>Home Page</h1>
-          <p>"I might create the home page ina way where there are more grids.
-          So contnt can go in each section of the grid and look neat and present table"</p>
+    <div class=" min-h-screen p-6 grid " >
+      <div class=" grid grid-cols-2 container rounded bg-black max-w-full shadow-2xl "> 
+        <Box class="p-4 bg-black text-white rounded">
+         Box1
         </Box>
-      </div>
-      <div class=" grid grid-cols-2 rounded max-w-full bg-gray-200 shadow-2xl ">
-        <Box class="p-6">
-          <h1>Home Page</h1>
-          <p>"I might create the home page ina way where there are more grids.
-          So contnt can go in each section of the grid and look neat and present table"</p>
+
+        <Box class="relative p-1 bg-black rounded ">
+          <img src={engbuilding} alt="engbuilding" class="rounded top-6 w-full"/>
+          <div class="absolute p-4 bg-black bg-opacity-30 top-1/2 buttom-1/2" >
+            <div class=" text-white overflow-auto"  >Insert text here if needed</div>
+          </div>
         </Box>
-        <Box class="p-6 bg-gray-900 text-white rounded">
-          <h1>More information</h1>
-          <p>"I might create the home page ina way where there are more grids.
-          So contnt can go in each section of the grid and look neat and present table"</p>
-        </Box>
+
       </div>
     
-      <div class=" grid gap-2 grid-cols-2 rounded max-w-full bg-gray-200 shadow-2xl ">
-      <Box class="p-6 bg-gray-900 text-white rounded">
-          <h1>More information</h1>
-          <p>"I might create the home page ina way where there are more grids.
-          So contnt can go in each section of the grid and look neat and present table"</p>
+      <div class=" grid grid-cols-2 p-1 rounded max-w-full bg-black shadow-2xl ">
+      <Box class="relative p-1 bg-black rounded ">
+          <img src={rosby1} alt="rosby1" class="rounded"/>
+          <div class="absolute p-4 bg-black bg-opacity-30 left-3/4  top-2/4" >
+            <div class=" text-white overflow-auto"  >Insert text here if needed</div>
+          </div>
         </Box>
-        <Box class="p-6">
-          <h1>Home Page</h1>
-          <p>"I might create the home page ina way where there are more grids.
-          So contnt can go in each section of the grid and look neat and present table"</p>
+
+        <Box class="p-6 bg-gblack">
+          Box 4
         </Box>
+        
       </div>
 
-      
-     
-   
     </div>
   )
 };

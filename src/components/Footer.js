@@ -6,8 +6,6 @@ import './footerstyles.css';
 // import GitHubIcon from '@material-ui/icons/GitHub';
 // import ArrowRightSharpIcon from '@material-ui/icons/ArrowRightSharp';
 
-
-
 export default function Footer() {
   return (
     <Box class="wrapper p-2 bg-gray-900 max-w-full content-start buttom-0" >
