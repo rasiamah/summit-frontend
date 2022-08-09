@@ -17,9 +17,7 @@ export default function NavBar() {
                      activeClassName=""
                      className="inline-flex items-center py-1 px-1 mr-4 text-white hover:text-green-800 
                      text-3xl italic font-mono cursive tracking-widest">
-                    <a class="logo" href="#">
                     <img src={logo} alt="summit-logo" width="140" class="d-inline-block align-text-top"/>
-                    </a>  
                     </NavLink>
 
                     <NavLink to='/whatwedo'
