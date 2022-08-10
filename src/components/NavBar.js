@@ -43,9 +43,7 @@ export default function NavBar() {
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-green-800">
                         <HandshakeOutlinedIcon/>Partners
                     </NavLink>
-
                     
-
                 </nav>
                 {/*secttion to create contact*/}
                 

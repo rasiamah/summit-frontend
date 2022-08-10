@@ -16,6 +16,7 @@
     /* background-color:yellow; */
     width: 30%
 }
+
 .mainbox {
     display: flex;
     justify-content: space-evenly;
