@@ -9,9 +9,9 @@ import { FormatQuoteRounded } from "@mui/icons-material";
 
 export default function Home() {
   return (
-    <div class=" min-h-screen p-6 grid bg-blue-400 " >
+    <div class=" min-h-screen p-6 grid bg-gradient-to-r from-green-500 to-blue-500" >
       <div class=" grid grid-cols-2 container rounded bg-black max-w-full shadow-2xl "> 
-        <Box class="p-6 bg-black text-white rounded">
+        <Box class="p-6 bg-black text-white rounded ">
          Box1
         </Box>
 

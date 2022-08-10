@@ -1,7 +1,6 @@
 import React from 'react';
 import {Box, Typography,Link} from '@material-ui/core';
 import './footerstyles.css'; 
-// import DescriptionIcon   from '@material-ui/icons/Description';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -19,25 +18,32 @@ export default function Footer() {
 
         <Box  p={3} boxShadow={8} borderRadius={10} class="middlebox rounded bg-black">
         <Typography variant="h5" color=""></Typography>
+           <Typography class="text-3xl m-2">Programs:</Typography>
           <Typography>
-            To God Be The Glory
+          <Link href="/"  color="inherit" class="italic" > {'Be a Mentor'} </Link>
+          </Typography>
+          <Typography>
+          <Link href="/whatwedo"  color="inherit" class="italic"> {'Be a Member'} </Link>
           </Typography>
         </Box>
         <Box p={3} boxShadow={8} borderRadius={9} class="rightbox rounded italic bg-black">
           <Typography>
-          <Link href=""  color="inherit"> {'Home'} </Link>
+          <Link href="/"  color="inherit"> {'Home'} </Link>
           </Typography>
           <Typography>
-          <Link href=""  color="inherit"> {'What we do'} </Link>
+          <Link href="/whatwedo"  color="inherit"> {'What we do'} </Link>
           </Typography>
           <Typography>
-          <Link href=""  color="inherit"> {'About SUMMIT'} </Link>
+          <Link href="/about"  color="inherit"> {'About SUMMIT'} </Link>
           </Typography>
           <Typography>
-          <Link href=""  color="inherit"> {'Partners'} </Link>
+          <Link href="/partners"  color="inherit"> {'Partners'} </Link>
           </Typography>
           <Typography>
-          <Link href=""  color="inherit"> {'Contact'} </Link>
+          <Link href="/programs"  color="inherit"> {'Programs'} </Link>
+          </Typography>
+          <Typography>
+          <Link href="/contact"  color="inherit"> {'Contact'} </Link>
           </Typography>
         </Box>
       </Box >
