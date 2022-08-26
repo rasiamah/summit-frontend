@@ -23,19 +23,19 @@ export default function Home() {
         </Box>
 
       <div class=" grid grid-cols-2 bg-black container rounded max-w-full shadow-2xl mb-12 "> 
-        <Box class="p-3 bg-white grid place-items-center ">
-          <div class="p-2  text-3xl bg-black text-center  bg-gray-300 mb-3 rounded">
+        <Box class=" p-12 bg-white grid place-items-center ">
+          <div class="p-15 text-3xl bg-black text-center  bg-gray-300 rounded">
             Motto: "Pomaja Twaweza"
           </div>
-          <div class="p-2 rounded  text-2xl text-center text-justify bg-black text-white mb-3">
+          <div class="p-5 rounded  text-center text-justify bg-black text-white ">
             <strong>Mission:  </strong>Developing and connecting first-generation Black students
                      through mentoring for future success.
           </div>
-          <div class="p-2 rounded text-2xl text-center text-justify bg-gray-300 mb-3">
+          <div class="p-5 rounded  text-center text-justify bg-gray-300 ">
             <strong>Vission: </strong>To build intellectuals with confidence and equip them with 
                 skills needed to make a difference in the future.
           </div>
-          <div class="p-2 rounded  text-2xl text-center text-justify bg-black text-white">
+          <div class="p-5 rounded   text-center text-justify bg-black text-white">
             <strong>Values: </strong>Academic Excellence, Moral Integrity, Selflessness, 
               Servitude, Sportsmanship, Fellowship, Discipline, Accountability, and Commitment.
           </div>
@@ -70,7 +70,7 @@ export default function Home() {
         </Box>
 
         <Box class="p-1 rounded text-white text-center text-3xl text-white 
-                    bg-gradient-to-r from-green-500 to-blue-500">
+                    bg-gradient-to-r from-green-500 to-black">
           <div class="  mt-12 italic">Pillars of The SUMMIT</div>
           <Accordion>
             <AccordionSummary
