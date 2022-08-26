@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Typography,Link} from '@material-ui/core';
+import {Box, Typography,Link} from '@mui/material';
 import './footerstyles.css'; 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
