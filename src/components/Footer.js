@@ -20,10 +20,10 @@ export default function Footer() {
         <Typography variant="h5" color=""></Typography>
            <Typography class="text-3xl m-2">Programs:</Typography>
           <Typography>
-          <Link href="/"  color="inherit" class="italic" > {'Be a Mentor'} </Link>
+          <Link href="/beamentor"  color="inherit" class="" > {'Be a Mentor'} </Link>
           </Typography>
           <Typography>
-          <Link href="/whatwedo"  color="inherit" class="italic"> {'Be a Member'} </Link>
+          <Link href="/beamember"  color="inherit" class=""> {'Be a Member'} </Link>
           </Typography>
         </Box>
         <Box p={3} boxShadow={8} borderRadius={9} class="rightbox rounded italic bg-black">
