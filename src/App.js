@@ -3,8 +3,10 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import NavBar from "./components/NavBar";
+// eslint-disable-next-line 
+import NavBar from "./components/NavBar"; 
 import Programs from "./components/Programs";
+// eslint-disable-next-line 
 import Footer from "./components/Footer";
 import Whatwedo from './components/Whatwedo';
 import Partners from './components/Partners';
@@ -13,8 +15,9 @@ import Contact from './components/Contact';
 class App extends Component {
   render () {
   return (
+    // eslint-disable-next-line 
     <BrowserRouter>
-      <NavBar /> 
+      {/* <NavBar />  */ }
       <Routes>
         <Route element={<Home/>} path='/' exact />
         <Route element={<Whatwedo/>} path='/whatwedo'/>
@@ -23,7 +26,7 @@ class App extends Component {
         <Route element={<Partners/>} path='/partners'/>
         <Route element={<Contact/>} path='contact'/>
       </Routes>
-      <Footer /> 
+      {/* <Footer />  */}
     </BrowserRouter>
 
    );

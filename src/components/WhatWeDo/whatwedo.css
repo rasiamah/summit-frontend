@@ -1,0 +1,158 @@
+.general {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* height: 100vh; */
+}
+
+.header {
+  background-color: #141e30;
+  height: 8vh;
+}
+
+.box1 {
+    width: 50%;
+}
+.box2 {
+    width: 50%;
+}
+
+.h1Font {
+  font-size: 70px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 70px;
+  font-family: "Heebo", sans-serif;
+}
+.captionText {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.image {
+    
+}
+
+.scroll-downs {
+  /* position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 31px; */
+  /* bottom: 40px; */
+}
+.mousey {
+  width: 3px;
+  padding: 10px 12px;
+  height: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #1673ff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+.community {
+    background-color: #141e30;
+    /* height: 80vh; */
+}
+
+.comFont {
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 1.7px;
+    font-family: 'Teko', sans-serif;
+}
+
+.comText {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    line-height: 80px;
+}
+
+.defText {
+    font-size: 40px;
+    margin-bottom: -7px;
+    font-family: "Heebo", sans-serif;
+}
+
+.text-number {
+    font-size: 20px;
+    color: #D3D3D3;
+}
+
+.defineTitle {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0rem;
+}
+
+.defineCaption {
+    font-size: 16px;
+    color: #C0C0C0;
+    line-height: 1.6em;
+    text-align: center;
+    padding-top: 15px;
+    width: 84%;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+    /* .scroll-downs {
+      right: 0;
+      left: 0;
+      margin: auto;
+      display: none;
+    } */
+    .image {
+        display: none;
+    }
+    .h1Font{
+        font-size: 2.0rem;
+        line-height: normal;
+    }
+    .box1 {
+        width: 100%;
+    }
+    .box2 {
+        display: none;
+    }
+    .comFont {
+        font-size: 40px;
+        line-height: 40px;
+    }
+  }
+
