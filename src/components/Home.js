@@ -16,13 +16,14 @@ export default function Home() {
      <div class=" min-h-screen p-3 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
 
         <Box class=" bg-black text-white rounded mb-6">
-        <iframe class="h-screen w-full rounded " src="https://www.youtube.com/embed/BlnPxQeFykQ" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                 clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-         </iframe>
-        </Box>
+        <iframe class="h-screen w-full rounded p-12" src="https://www.youtube.com/embed/BlnPxQeFykQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" 
+               title="“The Summit” Student Organization Reaches for the Top" 
+                frameborder="0">
 
-      <div class=" grid grid-cols-2 bg-black container rounded max-w-full shadow-2xl mb-12 "> 
+        </iframe>
+        </Box>
+                
+      <div class=" grid grid-cols-2 bg-black container rounded max-w-full shadow-2xl mb-6 "> 
         <Box class=" p-12 bg-white grid place-items-center ">
           <div class="p-15 text-3xl bg-black text-center  bg-gray-300 rounded">
             Motto: "Pomaja Twaweza"
@@ -42,19 +43,13 @@ export default function Home() {
         </Box>
 
         <Box class="relative bg-black rounded ">
-          <img src={engbuilding} alt="engbuilding" class="rounded top-6 w-full"/>
-          {/* <div class="absolute p-4 bg-black bg-opacity-40 top-1/4 buttom-full" >
-            <div class=" text-white text-3xl italic text-justify"  >
-              {/* We do it for the impact. So others may prevail beyond their known capabilities. 
-           </div>
-          </div>  
-          */}
+          <img src={engbuilding} alt="engbuilding" class="top-6 w-full"/>
         </Box>
 
       </div>
     
-      <div class=" grid grid-cols-2  rounded max-w-full shadow-2xl ">
-      <Box class="relative bg-black rounded">
+      <div class=" grid grid-cols-2 max-w-full shadow-2xl ">
+      <Box class="relative bg-black ">
            <img src={rosby1} alt="rosby1" class="rounded"/> 
           <div class="absolute p-4 bg-black bg-opacity-40 top-1/2" >
             <div class=" text-white max-w-full italic text-justify" >
@@ -69,7 +64,7 @@ export default function Home() {
           </div>
         </Box>
 
-        <Box class="p-1 rounded text-white text-center text-3xl text-white 
+        <Box class="p-1 text-white text-center text-3xl text-white 
                     bg-gradient-to-r from-green-500 to-black">
           <div class="  mt-12 italic">Pillars of The SUMMIT</div>
           <Accordion>
