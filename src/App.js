@@ -17,7 +17,7 @@ class App extends Component {
   return (
     // eslint-disable-next-line 
     <BrowserRouter>
-      {/* <NavBar />  */ }
+     <NavBar /> 
       <Routes>
         <Route element={<Home/>} path='/' exact />
         <Route element={<Whatwedo/>} path='/whatwedo'/>

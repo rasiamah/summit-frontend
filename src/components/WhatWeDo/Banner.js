@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="general">
       <Stack>
-        <header className="header">Nav</header>
+        {/* <header className="header">Nav</header> */}
 
         <Container>
           <Stack direction={"row"} style={{ margin: "10px" }}>

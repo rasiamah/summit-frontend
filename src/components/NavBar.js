@@ -10,7 +10,7 @@ import logo from "../images/logo.JPG";
 
 export default function NavBar() {
     return (
-        <header className="bg-black">
+        <header style={{ backgroundColor:'rgb(20, 30, 48, 0.9)'}}>
             <div className=" sticky container mx-auto flex justify-between sticky-top">
                 <nav className="flex">
                     <NavLink to="/" exact 
