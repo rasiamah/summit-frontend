@@ -15,13 +15,13 @@ export default function Home() {
   return (
      <div class=" min-h-screen p-3 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
 
-        <Box class=" bg-black text-white rounded mb-6">
+        {/* <Box class=" bg-black text-white rounded mb-6">
         <iframe class="h-screen w-full rounded p-12" src="https://www.youtube.com/embed/BlnPxQeFykQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" 
                title="“The Summit” Student Organization Reaches for the Top" 
                 frameborder="0">
 
         </iframe>
-        </Box>
+        </Box> */}
                 
       <div class=" grid grid-cols-2 bg-black container rounded max-w-full shadow-2xl mb-6 "> 
         <Box class=" p-12 bg-white grid place-items-center ">
