@@ -42,7 +42,8 @@ export default function About() {
     <div class="text-white bg-blue-300 text-center mt-2">THE SUMMIT JOURNEY
 
     </div>
-    <div class="text-white bg-blue-300 text-center mt-2">MEET THE TEAM
+    <div class="text-white bg-blue-300 text-center mt-2">Techincal team again aksfsudfS
+
 
     </div>
     <div class="text-white bg-blue-300 text-center mt-2">BOARD OF DIRECTORS
