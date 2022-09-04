@@ -24,7 +24,7 @@ const Banner = () => {
                 <Typography variant="subtitle2" className="captionText">
                   We combine corportate and some other stuff come into it. It's
                   very cool and productive so incase if you worring. This is
-                  just some good stuff
+                  just some good stuff, very nice
                 </Typography>
 
                 {/* <Stack justifyContent="center" alignItems="center">
