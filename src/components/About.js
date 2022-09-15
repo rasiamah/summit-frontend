@@ -1,14 +1,25 @@
 import React from "react";
 import Box from '@mui/material/Box'; 
-import kev from '../images/Kev.jpg' 
+import kev from '../images/Kev.jpg'; 
+import Ros from '../images/ROSBY.jpg';
+import Kof from '../images/Kofi.png';
+//import BG from '../images/logo.JPG';
+//import './Aboutus.css'; 
 
 export default function About() {
   return (
    <div class="position-relative min-h-screen p-2">
     <Box class="position-static rounded max-w-full min-h-screen bg-gray-200 shadow-2xl">
+
+    <div class="text-white bg-black text-center p-4 mb-4 rounded">
+      <h1 class ="text-6xl text-bold text-center"> MEET THE TEAM </h1>
+      <p class= "text-2xl text-bold text-center mb-2">We're a growing collective of dreamers
+       and doers united by a shared mission empowering people to reach their full potential.</p>
+    </div>
+
     <div class="grid grid-cols-3 bg-black">
       <div>
-      <img src={kev} alt="dr. Kevin" class="rounded "/>
+      <img src={kev} alt="dr. Kevin" class="rounded p-4 "/>
       <div class="text-white text-4xl text-bold italic text-center">Founder:</div>
       </div>
       <div class="col-span-2 bg-black p-2 text-justify text-white">
@@ -41,13 +52,76 @@ export default function About() {
     </div>
     <div class="text-white bg-blue-300 text-center mt-2">THE SUMMIT JOURNEY
 
-    </div>
-    <div class="text-white bg-blue-300 text-center mt-2">Techincal team again aksfsudfS
-
+        <p>Talk about whet ever the summit journeyy has been over the past few years.</p>
 
     </div>
-    <div class="text-white bg-blue-300 text-center mt-2">BOARD OF DIRECTORS
 
+    <div class="container text-center mt-5 mb-2">
+    <h1 class="mb-0 text-2xl text-bold">BOARD OF DIRECTORS</h1></div>
+    <div class="container mt-3 content-center">
+        <div class="inline flex content-evenly content-center " >
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
+                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
+                </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
+                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
+                </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
+                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
+                </div>
+            </div>
+            </div>
+
+            <div class="inline flex content-evenly content-center " >
+                <div class="col-md-3 m-2">
+                    <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
+                        <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
+                    </div>
+                </div>
+                <div class="col-md-3 m-2">
+                    <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90"  alt="" src={Ros}/>
+                        <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="container text-center mt-5 mb-2">
+    <h1 class="mb-0 text-2xl text-bold">TECHNICAL TEAM</h1></div>
+    <div class="container mt-3 content-center">
+        <div class="inline flex content-center content-evenly">
+
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full" alt="Ros" src={Ros}/>
+                    <h5 class="mt-3 name">Rosby Asiamah</h5><span class="work d-block">Software Engineer / Web Developer</span><span class="work d-block"></span>
+                    <div class="mt-4">
+                        <h6 class="v-profile">Linkedin Profile</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full"  alt="Kofi" src={Kof} />
+                    <h5 class="mt-3 name">Kofi Adutwum</h5><span class="work d-block">Application Developer</span><span class="work d-block"></span>
+                    <div class="mt-4">
+                        <h6 class="v-profile">LinkedIn Profiel</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full"  alt="" src={Ros}/>
+                    <h5 class="mt-3 name">Melvin Kamara</h5><span class="work d-block">UI/UX Designer</span><span class="work d-block"></span>
+                    <div class="mt-4">
+                        <h6 class="v-profile">LinkedIn Profile</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </Box>
   </div>
