@@ -1,10 +1,17 @@
+
 import React from "react";
-import Box from '@mui/material/Box'; 
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import kev from '../images/Kev.jpg'; 
 import Ros from '../images/ROSBY.jpg';
-import Kof from '../images/Kofi.png';
-//import BG from '../images/logo.JPG';
-//import './Aboutus.css'; 
+import Kof from '../images/Kofi.png'; 
+import one from '../images/boy.jpg';
+import two from '../images/girl.jpg';
+import three from '../images/green.jpg';
+import four from '../images/guy.jpg';
+import five from '../images/pic1.jpg';
+import six from '../images/red.jpg';
+import seven from '../images/smile.jpg';
 
 export default function About() {
   return (
@@ -19,7 +26,7 @@ export default function About() {
 
     <div class="grid grid-cols-3 bg-black">
       <div>
-      <img src={kev} alt="dr. Kevin" class="rounded p-4 "/>
+      <img src={kev} alt="dr. Kevin" class="rounded "/>
       <div class="text-white text-4xl text-bold italic text-center">Founder:</div>
       </div>
       <div class="col-span-2 bg-black p-2 text-justify text-white">
@@ -56,73 +63,85 @@ export default function About() {
 
     </div>
 
-    <div class="container text-center mt-5 mb-2">
-    <h1 class="mb-0 text-2xl text-bold">BOARD OF DIRECTORS</h1></div>
-    <div class="container mt-3 content-center">
-        <div class="inline flex content-evenly content-center " >
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
-                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
-                </div>
-            </div>
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
-                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
-                </div>
-            </div>
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
-                    <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
-                </div>
-            </div>
-            </div>
-
-            <div class="inline flex content-evenly content-center " >
-                <div class="col-md-3 m-2">
-                    <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90" alt="" src={Ros}/>
-                        <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
-                    </div>
-                </div>
-                <div class="col-md-3 m-2">
-                    <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded" width="90"  alt="" src={Ros}/>
-                        <h5 class="mt-3 name">NAME</h5><span class="work d-block">TITLE</span><span class="work d-block"></span>
-                    </div>
-                </div>
-
-            </div>
+    <div class="container mt-5 ">
+        <h1 class="m-6 text-3xl text-bold text-center ">BOARD OF DIRECTORS</h1>
     </div>
 
-    <div class="container text-center mt-5 mb-2">
-    <h1 class="mb-0 text-2xl text-bold">TECHNICAL TEAM</h1></div>
-    <div class="container mt-3 content-center">
-        <div class="inline flex content-center content-evenly">
+    <Grid container spacing={2}>
+        <Grid item xs={6} md={3}>
+        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={one} alt=""/>
+                    <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Title </span> 
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+        </Grid>
+        <Grid item xs={6} md={3}>
+        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={two} alt=""/>
+                    <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Title </span> 
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+        </Grid>
+        <Grid item xs={6} md={3}>
+        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={three} alt=""/>
+                    <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Title </span> 
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+        </Grid>
+        <Grid item xs={6} md={3}>
+        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={four} alt=""/>
+                    <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Title </span> 
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+        </Grid>
+        <Grid item xs={6} md={3}>
+        <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={five} alt=""/>
+                    <h5 class="mt-3 name">Samuel Plamer</h5><span class="work d-block">Title </span> 
+                    <div class="mt-4">
+                        <h6 class="v-profile">View Profile</h6>
+                    </div>
+                </div>
+        </Grid>
+    </Grid>
 
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full" alt="Ros" src={Ros}/>
+    <div class="container text-center mt-5 mb-2">
+        <h1 class="mb-0 text-2xl text-bold">TECHNICAL TEAM</h1>
+    </div>
+    <Grid container spacing={2}>
+        <Grid item xs={6} md={3}>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Ros} alt="Ros"/>
                     <h5 class="mt-3 name">Rosby Asiamah</h5><span class="work d-block">Software Engineer / Web Developer</span><span class="work d-block"></span>
+                    {/* <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div> */}
                     <div class="mt-4">
                         <h6 class="v-profile">Linkedin Profile</h6>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full"  alt="Kofi" src={Kof} />
+            </Grid>
+            <Grid item xs={6} md={3}>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Kof} alt="Kof"/>
                     <h5 class="mt-3 name">Kofi Adutwum</h5><span class="work d-block">Application Developer</span><span class="work d-block"></span>
+                    {/* <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div> */}
                     <div class="mt-4">
                         <h6 class="v-profile">LinkedIn Profiel</h6>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 m-2">
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full"  alt="" src={Ros}/>
+            </Grid>
+            <Grid item xs={6} md={3}>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={six} alt="Mel"/>
                     <h5 class="mt-3 name">Melvin Kamara</h5><span class="work d-block">UI/UX Designer</span><span class="work d-block"></span>
+                    {/* <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div> */}
                     <div class="mt-4">
                         <h6 class="v-profile">LinkedIn Profile</h6>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </Grid>
+        </Grid>
     </Box>
   </div>
   );

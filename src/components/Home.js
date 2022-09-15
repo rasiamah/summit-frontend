@@ -3,7 +3,7 @@ import * as React from "react";
 import rosby1 from "../images/Rosby1.jpg";
 import engbuilding from "../images/Engbuilding.jpg";
 import Box from "@mui/material/Box";
-import { FormatQuoteRounded } from "@mui/icons-material";
+// import { FormatQuoteRounded } from "@mui/icons-material";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -52,7 +52,7 @@ export default function Home() {
       <Box class="relative bg-black ">
            <img src={rosby1} alt="rosby1" class="rounded"/> 
           <div class="absolute p-4 bg-black bg-opacity-40 top-1/2" >
-            <div class=" text-white max-w-full italic text-justify" >
+            {/* <div class=" text-white max-w-full italic text-justify" >
             <div class=" text-center" > <FormatQuoteRounded/> </div>
             Being a member of the summit helped me find my feet at old dominion University when I first go there.
             It gave me the opportunit to meet friends who were willing to put in the effort and do what it takes
@@ -60,7 +60,7 @@ export default function Home() {
              me alot. I'm glad to have been 
             a member of the summit. 
             <div class=" text-right " > "Rosby Asiamah" </div>
-            </div>
+            </div> */}
           </div>
         </Box>
 
