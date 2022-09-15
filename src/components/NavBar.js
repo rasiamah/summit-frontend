@@ -5,6 +5,7 @@ import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone
 import EventAvailableTwoToneIcon from '@mui/icons-material/EventAvailableTwoTone';
 import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
 import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
+import GroupsIcon from '@mui/icons-material/Groups';
 import logo from "../images/logo.JPG";
 
 
@@ -48,9 +49,16 @@ export default function NavBar() {
                 {/*secttion to create contact*/}
                 
                 <div className="inline-flex text-white py-3 px-3 space-x-6 pr-20 my-6">
+
+                    <NavLink to="/meettheteam"
+                        activeClassName=""
+                        className=" items-center p-2 rounded hover:text-green-800">
+                           <GroupsIcon/>Meet The Team 
+                    </NavLink> 
+
                     <NavLink to="/contact"
                         activeClassName=""
-                        className=" items-center rounded hover:text-green-800">
+                        className=" items-center p-2 rounded hover:text-green-800">
                            <AlternateEmailOutlinedIcon/>Contact 
                     </NavLink>                       
                 </div>
