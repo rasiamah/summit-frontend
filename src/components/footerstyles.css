@@ -2,19 +2,19 @@
     text-align: center;
     color: white;
     /* background-color: blue;  */
-    width: 30%
+    width: 20%
 }
 .rightbox {
     text-align: center;
     color: white;
     /* background-color:green; */
-    width: 30%
+    width: 25%
 }
 .middlebox {
     text-align: center;
     color: white;
-    /* background-color:yellow; */
-    width: 30%
+    background-image:linear-gradient(to right, blue , black);
+    width: 55%
 }
 
 .mainbox {
