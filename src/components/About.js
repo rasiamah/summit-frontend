@@ -1,14 +1,18 @@
+
 import React from "react";
-import Box from '@mui/material/Box'; 
-import kev from '../images/Kev.jpg' 
+import Box from '@mui/material/Box';
+//import Grid from '@mui/material/Grid';
+import kev from '../images/Kev.jpg'; 
+
 
 export default function About() {
   return (
    <div class="position-relative min-h-screen p-2">
     <Box class="position-static rounded max-w-full min-h-screen bg-gray-200 shadow-2xl">
-    <div class="grid grid-cols-3 bg-black">
+
+    `<div class="grid grid-cols-3 bg-black">
       <div>
-      <img src={kev} alt="dr. Kevin" class="rounded "/>
+      <img src={kev} alt="dr. Kevin" class="rounded pt-16 pl-3"/>
       <div class="text-white text-4xl text-bold italic text-center">Founder:</div>
       </div>
       <div class="col-span-2 bg-black p-2 text-justify text-white">
@@ -41,11 +45,7 @@ export default function About() {
     </div>
     <div class="text-white bg-blue-300 text-center mt-2">THE SUMMIT JOURNEY
 
-    </div>
-    <div class="text-white bg-blue-300 text-center mt-2">MEET THE TEAM
-
-    </div>
-    <div class="text-white bg-blue-300 text-center mt-2">BOARD OF DIRECTORS
+        <p>Talk about whet ever the summit journeyy has been over the past few years.</p>
 
     </div>
     </Box>
