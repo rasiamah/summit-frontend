@@ -1,10 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import {Box, Typography,Link} from '@mui/material';
-=======
-import {Box, Typography,Link} from '@material-ui/core';
 import { Grid } from "@mui/material";
->>>>>>> 6f118b0445d34ecd692045aa8fd97bc37dec71a0
 import './footerstyles.css'; 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
