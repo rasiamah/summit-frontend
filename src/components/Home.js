@@ -106,7 +106,7 @@ export default function Home() {
       <div>
         <Grid container spacing={2}>
           <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={rosby1} alt="Ros"/>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={rosby1} alt="Ros"/>
                   <p class="mb-4 text-justify">
                     Being a member of the summit helped me find my feet at old dominion University when I first go there.
                     It gave me the opportunit to meet friends who were willing to put in the effort and do what it takes
@@ -119,7 +119,7 @@ export default function Home() {
             </Grid>
           
           <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Reef} alt="reef"/>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={Reef} alt="reef"/>
                   <p class="mb-4 text-justify">
                   The summit…, where can I start. The summit benefited me in so many ways. I met a group of young brothers with 
                   goals and aspirations just like me and together we all strived to achieve these goals. I'd day that I met family away from 
@@ -133,7 +133,7 @@ export default function Home() {
             </Grid>
           
             <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Zeph} alt="Zeph"/>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={Zeph} alt="Zeph"/>
                   <p class="mb-4 text-justify ">
                     Being a part of the Summit has been a blessing that I intend to share with others. As a freshman, I came into 
                     college with an unstable mindset and no direction on where my future would be. I had no idea that a simple 
@@ -142,13 +142,14 @@ export default function Home() {
                     Knowing there are students out there who can have a chance at an amazing college experience through the Summit 
                     honestly brings me immense joy. I currently hold a job as engineer in the industry and am able to display the 
                     professionalism, work ethic, and wisdom that the Summit engraved in me. 
-                    <div class=" text-right text-2xl" > "Zeph" </div>
+                    <div class=" text-right text-2xl" > "Zeph Amonoo-Harrison" </div>
                   </p>
                 </div>
             </Grid>
 
             <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Mike} alt="Mike"/>
+                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60
+                " src={Mike} alt="Mike"/>
                   <p class="mb-4 text-justify ">
                     
                     <div class=" text-right text-2xl" > "Micheal Asante" </div>

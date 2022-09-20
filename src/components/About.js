@@ -10,7 +10,7 @@ export default function About() {
    <div class="position-relative min-h-screen p-2">
     <Box class="position-static rounded max-w-full min-h-screen bg-gray-200 shadow-2xl">
 
-    `<div class="grid grid-cols-3 bg-black">
+    <div class="grid grid-cols-3 bg-black">
       <div>
       <img src={kev} alt="dr. Kevin" class="rounded pt-16 pl-3"/>
       <div class="text-white text-4xl text-bold italic text-center">Founder:</div>
