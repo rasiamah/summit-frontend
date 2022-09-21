@@ -1,9 +1,10 @@
 
 import * as React from "react";
-import rosby1 from "../images/Rosby1.jpg";
+import  {useEffect, useState } from 'react';
+import rosby1 from "../images/ROSBY.jpg";
 import Reef from "../images/Reef.JPG";
 import Zeph from "../images/Zeph.JPEG";
-import Mike from "../images/Mike.png";
+import Moy from "../images/Moy.jpeg";
 import engbuilding from "../images/Engbuilding.jpg";
 import Box from "@mui/material/Box";
 // import { FormatQuoteRounded } from "@mui/icons-material";
@@ -14,8 +15,25 @@ import Box from "@mui/material/Box";
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Grid } from "@mui/material";
 
+const images = [rosby1,Reef,Zeph,Moy];
 
 export default function Home() {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if(currentIndex === images.length - 1) {
+                setCurrentIndex(0);
+            } 
+            else {
+                 setCurrentIndex(currentIndex + 1);
+            }
+        }, 10000)
+        
+        return () => clearInterval(intervalId);
+    }, [currentIndex])
+
   return (
      <div class=" min-h-screen p-3 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
 
@@ -27,26 +45,27 @@ export default function Home() {
         </iframe>
         </Box> */}
                 
-      <div class=" grid grid-cols-2 container rounded max-w-full mb-6 "> 
-        <Box class="p-2 grid place-items-center ">
-          <div class="p-5 text-3xl font-bold text-center font-bold shadow-4xl bg-gray-300 rounded">
+      <div class=" grid lg:grid-cols-2 sm:grid-cols-1 container rounded max-w-full mb-6 "> 
+        <Box class="p-2 grid place-items-center rounded" style={{backgroundImage: `url(${images[currentIndex]}`, 
+          backgroundSize:"cover", height:"100%"}}>
+          <div class="p-5 text-3xl font-bold text-center font-bold shadow-4xl  text-white bg-black bg-opacity-60 rounded">
             <span class="text-blue-900">Motto:</span> "Pomaja Twaweza"
           </div>
-          <div class="p-5 rounded font-bold text-center text-justify shadow-4xl bg-black text-white italic">
+          <div class="p-5 rounded font-bold text-center text-justify shadow-4xl text-white bg-black bg-opacity-60 italic">
             <strong>Mission:  </strong>Developing and connecting first-generation Black students
                      through mentoring for future success.
           </div>
-          <div class="p-5 rounded font-bold text-center text-justify bg-gray-300 italic">
+          <div class="p-5 rounded font-bold text-center text-justify bg-black text-white bg-opacity-60 italic">
             <strong>Vission: </strong>To build intellectuals with confidence and equip them with 
                 skills needed to make a difference in the future.
           </div>
-          <div class="p-5 rounded font-bold text-center text-left shadow-4xl bg-black text-white italic">
+          <div class="p-5 rounded font-bold text-center text-left shadow-4xl bg-black text-white  bg-opacity-60 italic">
             <strong>Values: </strong>Academic Excellence, Moral Integrity, Selflessness, 
               Servitude, Sportsmanship, Fellowship, Discipline, Accountability, and Commitment.
           </div>
         </Box>
 
-        <Box class="relative rounded ">
+        <Box class="relative rounded sm:hidden lg:flex">
           <img src={engbuilding} alt="engbuilding" class="top-6 rounded w-full"/>
         </Box>
       </div>
@@ -54,18 +73,17 @@ export default function Home() {
       <div class="p-6">
         <h1 class="text-center font-bold text-6xl">Our<span class="text-blue-900"> Mission</span></h1>
         <Box class="text-black text-center">
-          <p class="mb-4 text-1xl text-justify pr-64 pl-64">
+          <p class="mb-4 text-1xl text-justify sm:pr-6 sm:pl-6 lg:pr-64 lg:pl-64">
               Relationships shape the experience and outcomes of a student’s journey through higher education. 
               Some students will find these relationships among faculty and advisors; however, many more will 
               struggle to forge the long-lasting relationships that drive student success and open doors. 
           </p>
-          <p class="mb-4 text-1xl text-justify pr-64 pl-64">
+          <p class="mb-4 text-1xl text-justify sm:pr-6 sm:pl-6 lg:pr-64 lg:pl-64">
               At Mentor Collective, we seek to make life-changing relationships a feature of every student’s college experience. 
               To realize this vision, we partner with forward-thinking institutions that are committed to equity, inclusion, and 
               relationship-centered education.
           </p>
         </Box>
-
       </div>
     
       <div class="max-w-full pt-2 rounded mb-8">
@@ -105,8 +123,26 @@ export default function Home() {
 
       <div>
         <Grid container spacing={2}>
-          <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={rosby1} alt="Ros"/>
+        {/* 
+        to hid a div in small screen mode do: 
+        sx={{display: { xs: "none", md: "block" ,lg: "block" }}}
+         */}
+
+        <Grid item xs={12} md={3}  lg={3}>
+                <div class="bg-white p-3 text-center rounded box">
+                  <img class="img-responsive rounded w-full h-60" src={Moy} alt="Mike"/>
+                  <p class="mb-4 text-justify"> 
+                    The Summit has definitely benefited me greatly. Meeting the guys I met in the program not only helped me 
+                    through my classes but I also became great friends with them beyond college. The Summit helped me become a better 
+                    leader, a better friend, and someone who will always strive to improve the community around me.
+                    <div class=" text-right text-2xl" > "Moy Joseph" </div>
+                  </p>
+                </div>
+            </Grid> 
+
+          <Grid item xs={12} md={3} lg={3}>
+                <div class="bg-white p-3 text-center rounded box">
+                  <img class="img-responsive rounded w-full h-60" src={rosby1} alt="Ros"/>
                   <p class="mb-4 text-justify">
                     Being a member of the summit helped me find my feet at old dominion University when I first go there.
                     It gave me the opportunit to meet friends who were willing to put in the effort and do what it takes
@@ -118,8 +154,9 @@ export default function Home() {
                 </div>
             </Grid>
           
-          <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={Reef} alt="reef"/>
+          <Grid item xs={12} md={3} lg={3}>
+                <div class="bg-white p-3 text-center rounded box">
+                  <img class="img-responsive rounded w-full h-60" src={Reef} alt="reef"/>
                   <p class="mb-4 text-justify">
                   The summit…, where can I start. The summit benefited me in so many ways. I met a group of young brothers with 
                   goals and aspirations just like me and together we all strived to achieve these goals. I'd day that I met family away from 
@@ -132,8 +169,9 @@ export default function Home() {
                 </div>
             </Grid>
           
-            <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60" src={Zeph} alt="Zeph"/>
+            <Grid item xs={12} md={3} lg={3}>
+                <div class="bg-white p-3 text-center rounded box">
+                  <img class="img-responsive rounded w-full h-60" src={Zeph} alt="Zeph"/>
                   <p class="mb-4 text-justify ">
                     Being a part of the Summit has been a blessing that I intend to share with others. As a freshman, I came into 
                     college with an unstable mindset and no direction on where my future would be. I had no idea that a simple 
@@ -147,15 +185,9 @@ export default function Home() {
                 </div>
             </Grid>
 
-            <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-60
-                " src={Mike} alt="Mike"/>
-                  <p class="mb-4 text-justify ">
-                    
-                    <div class=" text-right text-2xl" > "Micheal Asante" </div>
-                  </p>
-                </div>
-            </Grid>
+           
+
+            
 
         </Grid>
       </div>

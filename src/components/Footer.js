@@ -41,8 +41,8 @@ export default function Footer() {
 
           <Grid xs={12} md={6}>
 
-          <div class=" mt-6 mb-6 rounded justify-center bg-white">
-          <div class="bg-white pl-24 rounded">
+          <div class=" mt-6 mb-6 rounded  bg-white sm:hidden lg:block">
+          <div class="bg-white rounded justify-center">
           <LanguageIcon class="h-24"/>
           </div>
            <div class="text-black p-6 text-justify text-right">
