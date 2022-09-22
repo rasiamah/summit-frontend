@@ -6,6 +6,9 @@ import Reef from "../images/Reef.JPG";
 import Zeph from "../images/Zeph.JPEG";
 import Moy from "../images/Moy.jpeg";
 import engbuilding from "../images/Engbuilding.jpg";
+import hands from "../images/hands.jpg";
+import  stadium  from "../images/stadium.jpg";
+import broderick from "../images/broderick.jpg";
 import Box from "@mui/material/Box";
 // import { FormatQuoteRounded } from "@mui/icons-material";
 // import Accordion from '@mui/material/Accordion';
@@ -15,11 +18,36 @@ import Box from "@mui/material/Box";
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Grid } from "@mui/material";
 
-const images = [rosby1,Reef,Zeph,Moy];
+const images = [engbuilding,hands,broderick,stadium];
+
+const text = [
+  <p>
+    " The Summit has benefited me in so many ways. There were members and friends that helped me find the right 
+    classes to take every semester. The Summit also provided a support system for anyone who were going through 
+    tough situations in and out of school. Study sessions for student were also created to help students progress
+    in their classes. Not only were study sessions held but we had guest speakers come to talk to us about self
+    improvement when it came to finances and personal health. We also made time to also enjoy each other’s company
+    outside of school whether it was playing sports at the ODU gym or going to the movies. This environment helped 
+    me grow and improve as a student and a man. The relationship I built with Dr. Kevin Muchiri and all the members 
+    in the Summit has really shaped the person I am today. Being apart of the Summit for the past 5 years gave me 
+    memories and great moments that I will cherish for a lifetime." <br/>
+    <span class="text-2xl font-bold text-right " >Micheal Asante</span>
+  </p>,
+
+  <p> Being a member of the summit helped me find my feet at old dominion University when I first go there.
+  It gave me the opportunit to meet friends who were willing to put in the effort and do what it takes
+  to be successful and so that made me work harder. The friendliness and mentorship of the leaders motivated
+  me alot. I'm glad to have been 
+  a member of the summit. </p>,
+
+  <p>Text 3</p>
+  
+];
 
 export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -33,6 +61,19 @@ export default function Home() {
         
         return () => clearInterval(intervalId);
     }, [currentIndex])
+
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+          if(currentIndex2 === text.length - 1) {
+              setCurrentIndex2(0);
+          } 
+          else {
+               setCurrentIndex2(currentIndex2 + 1);
+          }
+      }, 17000)
+      
+      return () => clearInterval(intervalId);
+  }, [currentIndex2])
 
   return (
      <div class=" min-h-screen p-3 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
@@ -65,8 +106,10 @@ export default function Home() {
           </div>
         </Box>
 
-        <Box class="relative rounded sm:hidden lg:flex">
-          <img src={engbuilding} alt="engbuilding" class="top-6 rounded w-full"/>
+        <Box class="relative rounded sm:hidden lg:block bg-gradient-to-r from-black to-blue-500 item-center">
+        {/* <img src={engbuilding} alt="engbuilding" class="top-6 rounded w-full"/> */}
+        <div class="text-center text-white font-bold text-2xl p-4">What people have to say about the summit</div>
+          <div class="text-justify p-4 text-white flex">{text[currentIndex2]}</div>
         </Box>
       </div>
 
@@ -128,7 +171,7 @@ export default function Home() {
         sx={{display: { xs: "none", md: "block" ,lg: "block" }}}
          */}
 
-        <Grid item xs={12} md={3}  lg={3}>
+        <Grid item xs={6} md={3}  lg={3}>
                 <div class="bg-white p-3 text-center rounded box">
                   <img class="img-responsive rounded w-full h-60" src={Moy} alt="Mike"/>
                   <p class="mb-4 text-justify"> 
@@ -140,7 +183,7 @@ export default function Home() {
                 </div>
             </Grid> 
 
-          <Grid item xs={12} md={3} lg={3}>
+          <Grid item xs={6} md={3} lg={3}>
                 <div class="bg-white p-3 text-center rounded box">
                   <img class="img-responsive rounded w-full h-60" src={rosby1} alt="Ros"/>
                   <p class="mb-4 text-justify">
@@ -154,7 +197,7 @@ export default function Home() {
                 </div>
             </Grid>
           
-          <Grid item xs={12} md={3} lg={3}>
+          <Grid item xs={6} md={3} lg={3}>
                 <div class="bg-white p-3 text-center rounded box">
                   <img class="img-responsive rounded w-full h-60" src={Reef} alt="reef"/>
                   <p class="mb-4 text-justify">
@@ -169,7 +212,7 @@ export default function Home() {
                 </div>
             </Grid>
           
-            <Grid item xs={12} md={3} lg={3}>
+            <Grid item xs={6} md={3} lg={3}>
                 <div class="bg-white p-3 text-center rounded box">
                   <img class="img-responsive rounded w-full h-60" src={Zeph} alt="Zeph"/>
                   <p class="mb-4 text-justify ">
