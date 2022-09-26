@@ -10,6 +10,9 @@ import hands from "../images/hands.jpg";
 import  stadium  from "../images/stadium.jpg";
 import broderick from "../images/broderick.jpg";
 import Box from "@mui/material/Box";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import VideoPlay from "./video/VideoPlay";
+
 // import { FormatQuoteRounded } from "@mui/icons-material";
 // import Accordion from '@mui/material/Accordion';
 // import AccordionSummary from '@mui/material/AccordionSummary';
@@ -30,24 +33,33 @@ const text = [
     outside of school whether it was playing sports at the ODU gym or going to the movies. This environment helped 
     me grow and improve as a student and a man. The relationship I built with Dr. Kevin Muchiri and all the members 
     in the Summit has really shaped the person I am today. Being apart of the Summit for the past 5 years gave me 
-    memories and great moments that I will cherish for a lifetime." <br/>
-    <span class="text-2xl font-bold text-right " >Micheal Asante</span>
+    memories and great moments that I will cherish for a lifetime." <br/><br/>
+    <span class="text-2xl font-bold text-right" >" Micheal Asante "</span>
   </p>,
 
-  <p> Being a member of the summit helped me find my feet at old dominion University when I first go there.
+  <p> " Being a member of the summit helped me find my feet at old dominion University when I first go there.
   It gave me the opportunit to meet friends who were willing to put in the effort and do what it takes
   to be successful and so that made me work harder. The friendliness and mentorship of the leaders motivated
-  me alot. I'm glad to have been 
-  a member of the summit. </p>,
+  me alot. I'm glad to have been a member of the summit. "<br/><br/>
+  <span class="text-2xl font-bold text-right" >" Rosby Asiamah "</span>
+  </p>,
 
-  <p>Text 3</p>
+  <p>" Being a part of the Summit has been a blessing that I intend to share with others. As a freshman, I came into 
+  college with an unstable mindset and no direction on where my future would be. I had no idea that a simple 
+  invitation to join what was then a little study group, would have molded me into the man I am today. I was 
+  invited to join not a group, but a family that built me ground-up in the areas of confidence and virtues. 
+  Knowing there are students out there who can have a chance at an amazing college experience through the Summit 
+  honestly brings me immense joy. I currently hold a job as engineer in the industry and am able to display the 
+  professionalism, work ethic, and wisdom that the Summit engraved in me. " <br/><br/>
+  <span class="text-2xl font-bold text-right" >" Zeph Amonoo-Harrison "</span>
+  </p>
   
 ];
 
 export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentIndex2, setCurrentIndex2] = useState(0);
+  const [currentIndexText, setCurrentIndexText] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -64,80 +76,119 @@ export default function Home() {
 
     useEffect(() => {
       const intervalId = setInterval(() => {
-          if(currentIndex2 === text.length - 1) {
-              setCurrentIndex2(0);
+          if(currentIndexText === text.length - 1) {
+              setCurrentIndexText(0);
           } 
           else {
-               setCurrentIndex2(currentIndex2 + 1);
+               setCurrentIndexText(currentIndexText + 1);
           }
       }, 17000)
       
       return () => clearInterval(intervalId);
-  }, [currentIndex2])
+  }, [currentIndexText])
 
   return (
-     <div class=" min-h-screen p-3 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
+     <div class=" min-h-screen p-2 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
+      
 
-        {/* <Box class=" bg-black text-white rounded mb-6">
-        <iframe class="h-screen w-full rounded p-12" src="https://www.youtube.com/embed/BlnPxQeFykQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" 
-               title="“The Summit” Student Organization Reaches for the Top" 
-                frameborder="0">
-
-        </iframe>
-        </Box> */}
+      <Box class="text-white rounded mb-6">
+        <VideoPlay />     
+      </Box>
                 
-      <div class=" grid lg:grid-cols-2 sm:grid-cols-1 container rounded max-w-full mb-6 "> 
-        <Box class="p-2 grid place-items-center rounded" style={{backgroundImage: `url(${images[currentIndex]}`, 
+      <div class="grid lg:grid-cols-2 sm:grid-cols-1 container rounded max-w-full mb-6" > 
+        <Box class="p-4 grid place-items-center rounded" style={{backgroundImage: `url(${images[currentIndex]}`, 
           backgroundSize:"cover", height:"100%"}}>
-          <div class="p-5 text-3xl font-bold text-center font-bold shadow-4xl  text-white bg-black bg-opacity-60 rounded">
+          <div class="p-2 text-3xl font-bold text-center font-bold shadow-4xl  text-white bg-black bg-opacity-60 rounded">
             <span class="text-blue-900">Motto:</span> "Pomaja Twaweza"
           </div>
-          <div class="p-5 rounded font-bold text-center text-justify shadow-4xl text-white bg-black bg-opacity-60 italic">
+          <div class="p-2 rounded font-bold text-center text-justify shadow-4xl text-white bg-black bg-opacity-60 italic">
             <strong>Mission:  </strong>Developing and connecting first-generation Black students
                      through mentoring for future success.
           </div>
-          <div class="p-5 rounded font-bold text-center text-justify bg-black text-white bg-opacity-60 italic">
+          <div class="p-2 rounded font-bold text-center text-justify bg-black text-white bg-opacity-60 italic">
             <strong>Vission: </strong>To build intellectuals with confidence and equip them with 
                 skills needed to make a difference in the future.
           </div>
-          <div class="p-5 rounded font-bold text-center text-left shadow-4xl bg-black text-white  bg-opacity-60 italic">
+          <div class="p-2 rounded font-bold text-center text-left shadow-4xl bg-black text-white  bg-opacity-60 italic">
             <strong>Values: </strong>Academic Excellence, Moral Integrity, Selflessness, 
               Servitude, Sportsmanship, Fellowship, Discipline, Accountability, and Commitment.
           </div>
         </Box>
 
-        <Box class="relative rounded sm:hidden lg:block bg-gradient-to-r from-black to-blue-500 item-center">
+        <Box class="p-4 rounded sm:hidden lg:block bg-gradient-to-r from-black to-blue-500 item-center">
         {/* <img src={engbuilding} alt="engbuilding" class="top-6 rounded w-full"/> */}
         <div class="text-center text-white font-bold text-2xl p-4">What people have to say about the summit</div>
-          <div class="text-justify p-4 text-white flex">{text[currentIndex2]}</div>
+          <div class="text-justify p-4 text-white flex">{text[currentIndexText]}</div>
         </Box>
       </div>
 
-      <div class="p-6">
-        <h1 class="text-center font-bold text-6xl">Our<span class="text-blue-900"> Mission</span></h1>
-        <Box class="text-black text-center">
+
+
+
+
+     
+        <h1 class="text-center font-bold text-6xl text-black mt-20"> Our <span class="text-blue-900">Mission</span></h1>
+        <Box class="text-black text-center ">
           <p class="mb-4 text-1xl text-justify sm:pr-6 sm:pl-6 lg:pr-64 lg:pl-64">
-              Relationships shape the experience and outcomes of a student’s journey through higher education. 
-              Some students will find these relationships among faculty and advisors; however, many more will 
-              struggle to forge the long-lasting relationships that drive student success and open doors. 
-          </p>
-          <p class="mb-4 text-1xl text-justify sm:pr-6 sm:pl-6 lg:pr-64 lg:pl-64">
-              At Mentor Collective, we seek to make life-changing relationships a feature of every student’s college experience. 
-              To realize this vision, we partner with forward-thinking institutions that are committed to equity, inclusion, and 
-              relationship-centered education.
+              Our sole mission is to develop and connect first-generation students through mentoring, physical and spiritual
+              training for current and future successes as they move through life. Most poeple need guidance in their journey
+              through life and the summit makes sure to provide that for students that needs it. All it takes is to make yourself 
+              and the summit will do the rest. 
           </p>
         </Box>
-      </div>
+        <h1 class="text-center font-bold text-6xl text-black mt-10"> Our <span class="text-blue-900">Vision</span></h1>
+        <Box class="text-black text-center">
+          <p class="mb-4 text-1xl text-justify sm:pr-6 sm:pl-6 lg:pr-64 lg:pl-64">
+           In everthing we do, we need confidence and strong sense of faith and at the summit, our vision is to build and impact each intellectual with 
+           confidence and equip them with a belief in God which we believe needed to make a difference now and in the future.
+          </p>
+        </Box>
+
+        <div class="flex justify-center mt-20">
+        <span></span>
+        <div class="sm:hidden mg:block lg:block relative h-48 w-3/4 my-10 p-6 rounded text-white ">
+          <div class="absolute bottom-0 right-0 bg-blue-900 p-2 rounded">
+            Selflessness
+          </div>
+          <div class="absolute top-4 right-4 bg-blue-500 p-2 rounded">
+            Academic Excellence
+          </div>
+          <div class="absolute top-0 left-4 bg-blue-500 p-2 rounded">
+            Moral Integrity
+          </div>
+          <div class="absolute bottom-7 left-8 bg-blue-800 p-2 rounded">
+            Servitude
+          </div>
+          <div class="absolute  left-40 top-16 bg-blue-700 p-2 rounded">
+            Sportsmanship
+          </div>
+          <div class="absolute top-1/2 right-60 bg-blue-800 p-2 rounded">
+            Fellowship
+          </div>
+          <div class="absolute bottom-0 right-80 bg-blue-900 p-2 rounded">
+            Discipline
+          </div>
+          <div class="absolute left-80 top-1/2 bg-white text-blue-800 font-bold p-2 text-4xl rounded shadow">
+            TOGETHER WE CAN
+          </div>
+          <div class="absolute top-18 left-1/2 bg-blue-600 p-2 rounded">
+            Commitment
+          </div>
+          <div class="absolute top-0 right-1/4 bg-blue-900 p-2 rounded">
+            Accountability
+          </div>
+        </div>
+        </div>
     
-      <div class="max-w-full pt-2 rounded mb-8">
+      <div class="max-w-full pt-2 rounded mb-8 mt-20">
         <Box class="text-white rounded text-center text-3xl">
                     {/*bg-gradient-to-r from-blue-500 to-black*">*/}
-          <div class="text-6xl text-black font-bold mb-6 mb-6">Pillars of 
+          <div class="text-6xl text-black font-bold mb-6">Pillars of 
             <span class="text-blue-900"> The SUMMIT
             </span>
           </div>
-         
-         <div class="pl-4">
+
+         <div class="pl-4 mt-10">
           <Grid container spacing={2}>
             <Grid xs={6} md={6}>
               <div class="bg-gradient-to-r from-blue-500 to-black w-auto h-60 text-white"> Spiritual </div>
@@ -152,17 +203,15 @@ export default function Home() {
               <div class="bg-gradient-to-l from-blue-500 to-black w-auto h-60"> Physical </div>
             </Grid>
           </Grid>
-
-          </div>
-         
-        
-         
+         </div>
         </Box> 
       </div>
 
       <div class="text-center mt-2 mb-2">
         <h1 class="mb-4 text-6xl font-bold text-blue-900">Testimonials!</h1>
     </div>
+
+       
 
       <div>
         <Grid container spacing={2}>

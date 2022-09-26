@@ -6,13 +6,12 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
     return (
         <header class="bg-black">
-            <div class=" sticky container mx-auto flex justify-between sticky-top">
+            <div class="sticky flex container justify-between sticky-top">
                 <nav className="flex">
                     <NavLink to="/" exact
                      className="inline-flex items-center ml-4 text-white p-2  
-                     text-3xl font-mono cursive tracking-widest mt-6 mb-6 ">
-                    {/* <img src={logo} alt="summit-logo" width="140" class="d-inline-block align-text-top"/> */}
-                    <span class="hover:bg-blue-900 rounded p-2 ">Home </span>
+                     text-3xl font-mono cursive tracking-widest mt-1 mb-1 rounded bg-blue-900">
+                    <span class="hover:text-black rounded p-2 ">Home </span>
                     </NavLink>
 
                     <NavLink to='/whatwedo'
@@ -42,17 +41,17 @@ export default function NavBar() {
                 </nav>
                 {/*secttion to create contact*/}
                 
-                <div class="inline-flex text-white py-3 px-3 space-x-6 pr-6 my-6">
+                <div class="inline-flex text-white py-3 px-3 space-x-6 pr-6 ">
 
                     <NavLink to="/meettheteam"
                         activeClassName=""
-                        className=" items-center p-2 mt-6 mb-6 pr-2 pl-2 hover:bg-blue-900 rounded">
+                        className=" items-center p-2 mt-2 mb-2 pr-2 pl-2 hover:bg-blue-900 rounded">
                            {/*<GroupsIcon/>*/}Meet The Team 
                     </NavLink> 
 
                     <NavLink to="/contact"
                         activeClassName=""
-                        className=" items-center p-2 mt-6 mb-6 pr-2 pl-2 hover:bg-blue-900 rounded">
+                        className=" items-center p-2 mt-2 mb-2 pr-2 pl-2 hover:bg-blue-900 rounded">
                            {/*<AlternateEmailOutlinedIcon/>*/}Contact 
                     </NavLink>                       
                 </div>

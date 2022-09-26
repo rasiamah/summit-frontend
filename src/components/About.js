@@ -44,9 +44,7 @@ export default function About() {
       </div>
     </div>
     <div class="text-white bg-blue-300 text-center mt-2">THE SUMMIT JOURNEY
-
-        <p>Talk about whet ever the summit journeyy has been over the past few years.</p>
-
+        <p>Talk about what ever the summit journeyy has been over the past few years.</p>
     </div>
     </Box>
   </div>

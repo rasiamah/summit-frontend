@@ -12,7 +12,7 @@ const Community = () => {
         <Box sx={{ p: 2, mt: 4 }}>
           <Stack alignItems="center">
             <h1 className="comFont">
-              We not just a summit, <br /> but we also family
+              We not just the summit, <br /> but we are also a family
             </h1>
 
             <Typography variant="body2" className="comText">

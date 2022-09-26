@@ -18,27 +18,27 @@ export default function Footer() {
         </Typography>
         <Typography color="" class="text-2xl text-left">Follow US:</Typography>
           <Typography class="text-left space-y-2">
-          <Typography><YouTubeIcon/><Link href="" color="inherit">{'Youtube'}</Link></Typography>  
-          <Typography><LinkedInIcon/><Link href=""  color="inherit"> {'LinkedIn'} </Link></Typography>
-          <Typography><FacebookIcon/><Link href="" color="inherit"> {'Facebook'} </Link></Typography>
+          <Typography><YouTubeIcon/><Link href="" color="inherit" class="hover:text-gray-500">{'Youtube'}</Link></Typography>  
+          <Typography><LinkedInIcon/><Link href=""  color="inherit" class="hover:text-gray-500"> {'LinkedIn'} </Link></Typography>
+          <Typography><FacebookIcon/><Link href="" color="inherit" class="hover:text-gray-500"> {'Facebook'} </Link></Typography>
         </Typography>
         </Box>
 
         <Box  p={3} boxShadow={8} borderRadius={10} class="middlebox rounded">
          <Grid container spacing={2}>
           <Grid >
-            <div class="ml-12">
+            <div class="ml-12" >
             <Typography variant="h5" color=""></Typography>
-              <Typography class="text-3xl m-2 p-2">Programs:</Typography>
+              <Typography class="text-3xl m-2 p-2" >Programs:</Typography>
             <Typography>
-              <Link href="/beamentor"  color="inherit" class="" > {'Be a Mentor'} </Link>
+              <Link href="/programs"  color="inherit" class='hover:bg-black rounded p-2' > {'Be a Mentor'} </Link>
             </Typography>
             <Typography>
-              <Link href="/beamember"  color="inherit" class=""> {'Be a Member'} </Link>
+              <Link href="/programs"  color="inherit" class="hover:bg-black rounded p-2" > {'Be a Member'} </Link>
             </Typography>
             </div>
           </Grid>
-
+{/* 
           <Grid xs={12} md={6}>
 
           <div class=" mt-6 mb-6 rounded  bg-white sm:hidden lg:block">
@@ -51,7 +51,7 @@ export default function Footer() {
               family and the important of God.</span>
            </div>
           </div>
-          </Grid>
+          </Grid> */}
          </Grid>
         </Box>
 
@@ -59,22 +59,22 @@ export default function Footer() {
         <Typography color="" class=" text-2xl mb-3">Navigation</Typography>
         <Typography class="space-y-2">
           <Typography>
-          <Link href="/"  color="inherit"> {'Home'} </Link>
+          <Link href="/"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'Home'} </Link>
           </Typography>
           <Typography>
-          <Link href="/whatwedo"  color="inherit"> {'What we do'} </Link>
+          <Link href="/whatwedo"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'What we do'} </Link>
           </Typography>
           <Typography>
-          <Link href="/about"  color="inherit"> {'About SUMMIT'} </Link>
+          <Link href="/about"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'About SUMMIT'} </Link>
           </Typography>
           <Typography>
-          <Link href="/partners"  color="inherit"> {'Partners'} </Link>
+          <Link href="/partners"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'Partners'} </Link>
           </Typography>
           <Typography>
-          <Link href="/programs"  color="inherit"> {'Programs'} </Link>
+          <Link href="/programs"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'Programs'} </Link>
           </Typography>
           <Typography>
-          <Link href="/contact"  color="inherit"> {'Contact'} </Link>
+          <Link href="/contact"  color="inherit" class="hover:bg-blue-900 rounded p-2" > {'Contact'} </Link>
           </Typography>
         </Typography>
         </Box>

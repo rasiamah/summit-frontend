@@ -1,13 +1,17 @@
 import { Typography } from '@mui/material'
 import React from 'react'
+import logo from "../../images/logo.JPG"
 import "./video.css"
 
 const VideoCover = ({display}) => {
   return (
     <div className='video-cover' style={{ display: display}}>
-        <div>
+        <div >
         <Typography variant='h1' fontWeight={"700"}>Pomaja Twaweza</Typography>
-        {/* <Typography variant='caption' fontWeight={"700"} align="center">"Pomaja Twaweza"</Typography> */}
+        </div>
+
+        <div>
+          <img src={logo} alt="summit-logo" width="w-full" class="d-inline-block align-text-top rounded"/> 
         </div>
     </div>
   )
