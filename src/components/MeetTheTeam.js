@@ -18,15 +18,16 @@ export default function MeetTheTeam() {
     <Box class="position-static rounded max-w-full min-h-screen bg-gray-200 shadow-2xl">
 
     <div class="text-center p-2 rounded">
-      <h1 class ="text-4xl font-bold text-center"> MEET <span class="text-blue-900">THE TEAM </span></h1>
+      <h1 class ="text-4xl font-bold text-center text-blue-900"> MEET THE TEAM</h1>
       <p class= "text-1xl text-bold text-center p-2">We're a growing collective of dreamers
-       and doers united by a shared mission empowering people to reach their full potential.</p>
+       and doers united by a shared mission to empower young students aspiring to reach
+        their full potential.</p>
     </div>
 
    
 
     <div class="text-center p-4 mb-2 rounded">
-        <h1 class="text-4xl font-bold text-center ">BOARD OF DIRECTORS</h1>
+        <h1 class="text-4xl font-bold text-center text-blue-900 ">BOARD OF DIRECTORS</h1>
     </div>
 
     <Grid container spacing={2}>
@@ -73,11 +74,12 @@ export default function MeetTheTeam() {
     </Grid>
 
     <div class="text-center mt-2 mb-2">
-        <h1 class="mb-4 text-4xl font-bold">TECHNICAL TEAM</h1>
+        <h1 class="mb-4 text-4xl font-bold text-blue-900">TECHNICAL TEAM</h1>
     </div>
     <Grid container spacing={2} >
         <Grid item xs={6} md={3}>
-                <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded w-full h-48" src={Ros} alt="Ros"/>
+                <div class="bg-white p-3 text-center rounded box">
+                    <img class="img-responsive rounded w-full h-48" src={Ros} alt="Ros"/>
                     <h5 class="mt-3 name">Rosby Asiamah</h5><span class="work d-block">Software / Web Developer</span><span class="work d-block"></span>
                     {/* <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div> */}
                     <div class="mt-4">

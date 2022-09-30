@@ -5,7 +5,7 @@ import './footerstyles.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import LanguageIcon from '@mui/icons-material/Language';
+// import LanguageIcon from '@mui/icons-material/Language';
 
 export default function Footer() {
   return (
@@ -18,9 +18,9 @@ export default function Footer() {
         </Typography>
         <Typography color="" class="text-2xl text-left">Follow US:</Typography>
           <Typography class="text-left space-y-2">
-          <Typography><YouTubeIcon/><Link href="" color="inherit" class="hover:text-gray-500">{'Youtube'}</Link></Typography>  
-          <Typography><LinkedInIcon/><Link href=""  color="inherit" class="hover:text-gray-500"> {'LinkedIn'} </Link></Typography>
-          <Typography><FacebookIcon/><Link href="" color="inherit" class="hover:text-gray-500"> {'Facebook'} </Link></Typography>
+          <Typography><YouTubeIcon/><Link href="" color="inherit" class="hover:text-red-900">{'Youtube'}</Link></Typography>  
+          <Typography><LinkedInIcon/><Link href=""  color="inherit" class="hover:text-blue-700"> {'LinkedIn'} </Link></Typography>
+          <Typography><FacebookIcon/><Link href="" color="inherit" class="hover:text-blue-700"> {'Facebook'} </Link></Typography>
         </Typography>
         </Box>
 

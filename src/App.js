@@ -10,12 +10,14 @@ import Whatwedo from './components/Whatwedo';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
 import MeetTheTeam from './components/MeetTheTeam';
+// import SmallNav from './components/SmallNav';
 
 class App extends Component {
   render () {
   return (
     <BrowserRouter>
       <NavBar /> 
+      {/* <SmallNav/> */}
       <Routes>
         <Route element={<Home/>} path='/' exact />
         <Route element={<Whatwedo/>} path='/whatwedo'/>

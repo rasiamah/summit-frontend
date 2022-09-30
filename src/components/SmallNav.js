@@ -1,13 +1,11 @@
-import React from "react"
+import React from "react";
 import { NavLink } from "react-router-dom";
-// import logo from "../images/logo.JPG";
 
-
-export default function NavBar() {
+export default function SmallNav () {
     return (
         <header class="bg-black">
             <div class="sticky flex container justify-between sticky-top">
-                <nav className="flex">
+                <nav className="flex flex-col">
                     <NavLink to="/" exact
                      className="inline-flex items-center ml-4 text-white p-2  
                      text-3xl font-mono cursive tracking-widest mt-1 mb-1 rounded bg-blue-900">
@@ -16,8 +14,8 @@ export default function NavBar() {
 
                     <NavLink to='/whatwedo'
                     activeClassName='inline-flex items-center p-2 text-white'
-                    className="inline-flex items-center p-2 text-white tracking-tight">
-                       <span class="hover:bg-blue-900 rounded p-2 tracking-tight">What we do </span>
+                    className="inline-flex items-center p-2 text-white ">
+                       <span class="hover:bg-blue-900 rounded p-2 ">What we do </span>
                     </NavLink>
 
                     <NavLink to="/programs"
@@ -28,8 +26,8 @@ export default function NavBar() {
                     
                     <NavLink to="/about"
                     activeClassName=""
-                    className="inline-flex items-center p-2 text-white tracking-tight">
-                    <span class="hover:bg-blue-900 rounded p-2 tracking-tight">About Us</span>
+                    className="inline-flex items-center p-2 text-white">
+                    <span class="hover:bg-blue-900 rounded p-2 ">About Us</span>
                     </NavLink>
 
                     <NavLink to="/partners"
@@ -41,12 +39,10 @@ export default function NavBar() {
                 </nav>
                 {/*secttion to create contact*/}
                 
-                <div class="inline-flex text-white py-3 px-3 space-x-6 P-6">
-
+                <div class="flex flex-col inline-flex text-white py-3 px-3 space-x-6 pr-6 ">
                     <NavLink to="/meettheteam"
                         activeClassName=""
-                        className=" items-center p-2 mt-2 mb-2 pr-2 pl-2 hover:bg-blue-900 
-                        tracking-tight rounded">
+                        className=" items-center p-2 mt-2 mb-2 pr-2 pl-2 hover:bg-blue-900 rounded">
                            {/*<GroupsIcon/>*/}Meet The Team 
                     </NavLink> 
 

@@ -10,7 +10,7 @@ import hands from "../images/hands.jpg";
 import  stadium  from "../images/stadium.jpg";
 import broderick from "../images/broderick.jpg";
 import Box from "@mui/material/Box";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import VideoPlay from "./video/VideoPlay";
 
 // import { FormatQuoteRounded } from "@mui/icons-material";
@@ -88,14 +88,14 @@ export default function Home() {
   }, [currentIndexText])
 
   return (
-     <div class=" min-h-screen p-2 grid {*bg-gradient-to-r from-green-500 to-blue-500*}" >
-      
 
-      <Box class="text-white rounded mb-6">
-        <VideoPlay />     
-      </Box>
-                
-      <div class="grid lg:grid-cols-2 sm:grid-cols-1 container rounded max-w-full mb-6" > 
+     
+     <div class=" min-h-screen grid {*/bg-gradient-to-b from-black to-white/*}" >
+        <Box class="text-white rounded">
+          <VideoPlay />     
+        </Box> 
+      <div class="grid lg:grid-cols-2 sm:grid-cols-1 container rounded max-w-full
+      bg-gradient-to-b from-black to-white mb-6" > 
         <Box class="p-4 grid place-items-center rounded" style={{backgroundImage: `url(${images[currentIndex]}`, 
           backgroundSize:"cover", height:"100%"}}>
           <div class="p-2 text-3xl font-bold text-center font-bold shadow-4xl  text-white bg-black bg-opacity-60 rounded">
